@@ -1,0 +1,127 @@
+
+@font-face {
+  font-family: 'Bals';
+  src: local('Bals'), url('../public/font/BalsamiqSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Luckiest';
+  src: local('Luckiest'), url('../public/font/LuckiestGuy-Regular.ttf') format('truetype');
+}
+
+.App {
+  font-family: "Luckiest";
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  height : 100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.Preloading {
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  font-size : 45px;
+  font-weight : 500;
+  color : white;
+  text-shadow: -1.45px -1.45px 0 #000, 1.45px -1.45px 0 #000, -1.45px 1.45px 0 #000, 1.45px 1.45px 0 #000;
+}
+
+.Preloading img{
+  height : 70px;
+  margin-bottom:30px;
+}
+
+.Waiting {
+  animation: rotating 3s infinite;
+  width : 70px;
+  height : 80px;
+  background-size: 100% 100%;
+  background-size:cover;
+  margin-bottom:40px;
+}
+
+
+.startup {
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  font-size : 45px;
+}
+
+.startup .title {
+  width : 250px;
+  height : 100px;
+  margin-bottom:10px;
+}
+
+.startup .teacher {
+  width : 180px;
+  height : 240px;
+}
+
+.startup .start_button{
+  width : 250px;
+  margin-top : -35px;
+  background-color : #2bcaaa;
+  border : 2px solid black;
+  border-radius : 8px;
+  color : white;
+  font-size : 45px;
+  text-shadow:
+    -1.2px -1.2px 0 #000,
+    1.2px -1.2px 0 #000,
+    -1.2px 1.2px 0 #000,
+    1.2px 1.2px 0 #000;
+  height : 60px;
+  margin-bottom:5px;
+
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  align-items:center;
+}
+
+.startup .menu_button{
+  height : 50px;
+  width : 250px;
+  background-color : #ef7b47;
+  border : 2px solid black;
+  border-radius : 8px;
+  color : white;
+  display:flex;
+  align-items:center;
+  text-shadow:
+    -1.2px -1.2px 0 #000,
+    1.2px -1.2px 0 #000,
+    -1.2px 1.2px 0 #000,
+    1.2px 1.2px 0 #000;
+  justify-content :center;
+  font-size : 27px;
+}
+
+@keyframes rotating {
+  0% ,100%{
+      transform: rotateZ(0deg);
+  }
+  100% {
+      transform: rotateZ(360deg);
+  }
+}
+
+@keyframes App-logo-float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px)
+  }
+  100% {
+    transform: translateY(0px)
+  }
+}

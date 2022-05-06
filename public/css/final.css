@@ -1,0 +1,59 @@
+.final_container {
+    display:flex;
+    justify-content :center;
+    align-items:center;
+    flex-direction: column;
+}
+
+.final_header {
+    height : 80px;
+    font-size : 70px;
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+    color : white;
+}
+
+.final_trophy {
+    width : 200px;
+    height : 250px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    background-image : url('../images/trophy.png');
+    display:flex;
+    flex-direction: column-reverse;
+    padding-bottom:10px;
+}
+
+.final_trophy .mark {
+    font-size : 120px;
+    height : 80px;
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+    color : white;
+}
+.final_trophy .content {
+    font-size : 25px;
+    margin-top:-10px;
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+    color : white;
+}
+
+.final_submit{
+    font-size : 22px;
+    color : white; 
+    font-family: "bals";
+    text-shadow: 0px 1px rgba(0,0,0,0.3);
+    font-weight : 100;
+
+    box-shadow: 0 2px, rgb(0,0,0);
+    border-radius : 8px;
+    margin-top:20px;
+    width : 150px;
+    height : 40px;
+    border : 2px white solid;
+    opacity : 0.8;
+    background-color: #e6946b;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
